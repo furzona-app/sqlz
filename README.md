@@ -83,5 +83,11 @@ console.log(sqlz.parse("struct Test{STRING* testString='Hello world!';};"));
 */
 
 // parse from a file (synchronous)
-console.log(sqlz.parseFile("User.sqlz"));
+const userDef = sqlz.parseFile("User.sqlz");
+console.log(userDef);
+
+
+// you can now pass it to Sequelize to register as a model
+const sequelize = require("sequelize");
+const User = sequelize.define(userDef.tableName, userDef.fields, userDef.options);
 ```
