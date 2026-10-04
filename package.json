@@ -1,0 +1,25 @@
+{
+  "name": "sqlz",
+  "version": "1.0.0",
+  "description": "A Node.JS library for parsing .sqlz files; a custom format for defining Sequelize schemas.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furzona-app/sqlz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/furzona-app/sqlz/issues"
+  },
+  "homepage": "https://github.com/furzona-app/sqlz#readme",
+  "dependencies": {
+    "json5": "^2.2.3",
+    "sequelize": "^6.37.8"
+  }
+}
